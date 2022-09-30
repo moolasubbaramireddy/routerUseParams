@@ -24,17 +24,21 @@ const UserDetails = () => {
     console.log(params);
   });
   return (
-    <div>
-      <h1>UserDetails</h1>
+   <div>
+     <h1 className="flex justify-center p-6 text-2xl">UserDetails</h1>
+   
+    <div className="grid gap-4 grid-cols-4 grid-rows-3 ">
+      
       {newUser.map((item, index) => {
         return (
-          <div className="rounded border border-sky-500 p-2 m-2" key={index}>
-            <p>{item.id} </p>
-            <p>{item.body}</p>
-           <Link to={`${item.id}`}><p>{item.title}</p></Link> 
+          <div className="rounded border border-sky-500 p-2 m-2 " key={index}>
+            <p className="flex justify-center">{item.id} </p>
+            <p className="font-medium flex justify-center">{item.title}</p>
+           <Link to={`${item.id}`}><p className="indent-8">{item.body}</p></Link> 
           </div>
         );
       })}
+    </div>
     </div>
   );
 };
