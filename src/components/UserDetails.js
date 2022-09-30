@@ -21,7 +21,7 @@ const UserDetails = () => {
   useEffect(() => {
     getUsersApi();
     console.log(params);
-  }, [params]);
+  });
   return (
     <div>
       <h1>UserDetails</h1>
