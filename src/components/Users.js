@@ -24,7 +24,7 @@ const Users = () => {
     getApi();
   }, []);
   return (
-    <div className="grid gap-4 grid-cols-4 grid-rows-3 bg-orange-400 rounded-lg	 m-4  ">
+    <div className="grid gap-4 grid-cols-4 grid-rows-3 bg-orange-300 rounded-lg	 m-4  ">
       {users.map((user) => {
         return (
           <div
