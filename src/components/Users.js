@@ -24,11 +24,11 @@ const Users = () => {
     getApi();
   }, []);
   return (
-    <div className="grid gap-3 grid-cols-5 grid-rows-2 bg-slate-400 m-8  ">
+    <div className="grid gap-4 grid-cols-4 grid-rows-3 bg-orange-400 rounded-lg	 m-4  ">
       {users.map((user) => {
         return (
           <div
-            className="rounded-md bg-green-500 text-ellipsis overflow-hidden   p-8 shadow-2xl m-2"
+            className="rounded-md bg-orange-50	text-center overflow-hidden   p-8 shadow-2xl m-2"
             key={user.id}
           >
             <Link to={`/users/${user.id}`}>
