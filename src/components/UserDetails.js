@@ -17,6 +17,7 @@ const UserDetails = () => {
       console.log(error);
     }
   };
+  console.log(newUser);
 
   useEffect(() => {
     getUsersApi();
